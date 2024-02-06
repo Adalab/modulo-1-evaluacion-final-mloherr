@@ -1,0 +1,13 @@
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    &__text {
+        font-family: $fontFamily;
+
+        & p {
+           color:  
+        }
+    }
+}
