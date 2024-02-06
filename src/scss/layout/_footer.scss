@@ -6,6 +6,11 @@
     align-items: center;
     gap: 27.9px;
 
+    @media all and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__buttonup {
         background-color: $white;
         width: 45px;
@@ -19,27 +24,58 @@
         transform: translateY(-60%);
     }
 
-    &__links1 {
-        line-height: 1.88;
-        text-align: center;
-    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
 
-    &__links2 {
-        line-height: 1.88;
-        text-align: center;
-    }
+        @media all and (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: first baseline;
+            width: 100%;
+            padding: 0 90px;
 
-    &__copy {
-        text-align: center;
-        color: $white;
-        padding-bottom: 33.5px;
+        }
 
-        & p{
-            font-size: 0.875rem;
+        &--links1 {
             line-height: 1.88;
+            text-align: center;
+
+            @media all and (min-width:768px) {
+                order: 2;
+            }
+        }
+
+        &--links2 {
+            line-height: 1.88;
+            text-align: center;
+
+            @media all and (min-width:768px) {
+                order: 3;
+            }
+        }
+
+        &--copy {
+            text-align: center;
+            color: $white;
+            padding-bottom: 33.5px;
+
+            @media all and (min-width:768px) {
+                order: 1;
+            }
+    
+    
+            & p{
+                font-size: 0.875rem;
+                line-height: 1.88;
+            }
         }
     }
 }
+
+
 
 
 .links {

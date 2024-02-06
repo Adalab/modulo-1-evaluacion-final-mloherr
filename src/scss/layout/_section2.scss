@@ -6,6 +6,12 @@
     row-gap: 10px;
     padding-top: 20px;
 
+    @media all and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
     &__text {
         font-family: $fontFamily;
         grid-column: 1/2;
@@ -14,6 +20,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media all and (min-width:768px) {
+            grid-column: 1/4;
+            grid-row: 1/2; 
+        }
 
         & p {
            color: $brownishGrey;
@@ -25,6 +36,10 @@
             color: $black;
             font-size: 1.25rem;
             font-weight: $fontWeightBold;
+
+            @media all and (min-width:768px) {
+                font-size: 1.75rem
+            }
         }
     }
 
@@ -35,7 +50,24 @@
         align-items: center;
         gap: 20px;
 
+        grid-column: 1/4;
+        grid-row: 2/3;
+
+        @media all and (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 45px;
+        }
+
             &--img1 {
+                @media all and (min-width:768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 & img {
                     width: $widhtImgSection2;
                     height: $heigthImgSection2;
@@ -43,6 +75,11 @@
                     grid-column: 1/2;
                     grid-row: 2/3;
                     box-shadow: $boxShadowImgSection2;
+
+                    @media all and (min-width:768px) {
+                        grid-column: 1/2;
+                        grid-row: 2/3; 
+                    }
                 }
                 & p {
                     font-size: $fontSizeImages2;
@@ -50,9 +87,19 @@
                     font-weight: $fontWeightBold;
                     text-align: center;
                     padding-top: 8px;
+
+                    @media all and (min-width:768px) {
+                        font-size: $fontSizeImages2Responsive;
+                    }
                 }
         }
             &--img2 {
+                @media all and (min-width:768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 & img {
                 width: $widhtImgSection2;
                 height: $heigthImgSection2;
@@ -60,6 +107,11 @@
                 grid-column: 1/2;
                 grid-row: 3/4;
                 box-shadow: $boxShadowImgSection2;
+
+                @media all and (min-width:768px) {
+                    grid-column: 2/3;
+                    grid-row: 2/3; 
+                }
             }
             & p {
                 font-size: $fontSizeImages2;
@@ -67,9 +119,19 @@
                 font-weight: $fontWeightBold;
                 text-align: center;
                 padding-top: 8px;
+
+                @media all and (min-width:768px) {
+                    font-size: $fontSizeImages2Responsive;
+                }
             }
         }
             &--img3 {
+                @media all and (min-width:768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 & img {
                 width: $widhtImgSection2;
                 height: $heigthImgSection2;
@@ -77,6 +139,11 @@
                 grid-column: 1/2;
                 grid-row: 4/5;
                 box-shadow: $boxShadowImgSection2;
+
+                @media all and (min-width:768px) {
+                    grid-column: 3/4;
+                    grid-row: 2/3; 
+                }
             }
             & p {
                 font-size: $fontSizeImages2;
@@ -84,6 +151,10 @@
                 font-weight: $fontWeightBold;
                 text-align: center;
                 padding-top: 8px;
+
+                @media all and (min-width:768px) {
+                    font-size: $fontSizeImages2Responsive;
+                }
             }
         }
     }
@@ -95,6 +166,11 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
+
+        @media all and (min-width:768px) {
+            grid-column: 1/4;
+            grid-row: 3/4; 
+        }
 
         & button {
             background-color: $mossGreen;
