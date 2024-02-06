@@ -8,21 +8,35 @@
     margin: 0 15px;
 
     &__text {
+        max-width: 924px;
+        
         & h4 {
             color: $mossGreen;
             font-size: 0.875rem;
+
+            @media all and (min-width:768px) {
+                font-size: 1 rem;
+            }
         }
 
         & h2 {
             color: $black;
             font-size: 1.375rem;
             margin-top: 10px;
+
+            @media all and (min-width:768px) {
+                font-size: 2rem;
+            }
         }
         & p {
             color: $greyishBrown;
             font-size: 1.125rem;
             line-height: 1.67;
             margin-top: 10px;
+
+            @media all and (min-width:768px) {
+                font-size: 1.25rem;
+            }
         }
     }
 
