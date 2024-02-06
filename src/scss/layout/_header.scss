@@ -1,12 +1,13 @@
-<<<<<<< HEAD
-.header__menu {
-    background-color: $mossGreen;
-    width: 36.4px;
-    height: 36.8px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+    background-image: src("/src/images/cover.jpeg");
+
+    &__menu {
+        background-color: $mossGreen;
+        width: 36.4px;
+        height: 36.8px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-=======
->>>>>>> section1
