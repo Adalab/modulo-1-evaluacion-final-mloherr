@@ -9,6 +9,7 @@
     @media all and (min-width:768px) {
         display: flex;
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     &__buttonup {
@@ -36,6 +37,7 @@
             align-items: first baseline;
             width: 100%;
             padding: 0 90px;
+            padding-bottom: 15px;
 
         }
 
