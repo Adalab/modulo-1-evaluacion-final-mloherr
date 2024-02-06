@@ -1,5 +1,9 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header__menu {
+    background-color: $mossGreen;
+    width: 36.4px;
+    height: 36.8px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
