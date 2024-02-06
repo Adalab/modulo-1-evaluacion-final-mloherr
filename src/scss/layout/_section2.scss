@@ -1,10 +1,18 @@
 .section2 {
+    background-color: $ligthGreen;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
 
     &__text {
         font-family: $fontFamily;
+        grid-column: 1/2;
+        grid-row: 1/2; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         & p {
            color: $brownishGrey;
@@ -16,6 +24,77 @@
             color: $black;
             font-size: 1.25rem;
             font-weight: $fontWeightBold;
+        }
+    }
+
+    &__images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+            &--img1 {
+                & img {
+                    width: $widhtImgSection2;
+                    height: $heigthImgSection2;
+                    border-radius: 50%;
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                & p {
+                    font-size: $fontSizeImages2;
+                    color: $black;
+                    font-weight: $fontWeightBold;
+                    text-align: center;
+                }
+        }
+            &--img2 {
+                & img {
+                width: $widhtImgSection2;
+                height: $heigthImgSection2;
+                border-radius: 50%;
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            & p {
+                font-size: $fontSizeImages2;
+                color: $black;
+                font-weight: $fontWeightBold;
+                text-align: center;
+            }
+        }
+            &--img3 {
+                & img {
+                width: $widhtImgSection2;
+                height: $heigthImgSection2;
+                border-radius: 50%;
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+            & p {
+                font-size: $fontSizeImages2;
+                color: $black;
+                font-weight: $fontWeightBold;
+                text-align: center;
+            }
+        }
+    }
+    &__buttons {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & button {
+            background-color: $mossGreen;
+            color: $white;
+            font-size: $fontSizeButtons;
+            border-radius: 22.5px;
+            text-align: center;
+            border: solid $mossGreen;
         }
     }
 }
