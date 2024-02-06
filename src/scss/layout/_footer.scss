@@ -6,10 +6,22 @@
     align-items: center;
     gap: 27.9px;
 
+    &__buttonup {
+        background-color: $white;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        transform: translateY(-60%);
+    }
+
     &__links1 {
         line-height: 1.88;
         text-align: center;
-        margin-top: 60px;
     }
 
     &__links2 {

@@ -4,6 +4,8 @@
     justify-content: flex-start;
     align-items: start;
     gap: 6px;
+    padding-top: 34px;
+    margin: 0 15px;
 
     &__text {
         & h4 {
@@ -18,20 +20,23 @@
         & p {
             color: $greyishBrown;
             font-size: 1.125rem;
+            line-height: 1.67;
         }
     }
 
     &__button {
+        margin-top: 42px;
+        margin-bottom: 25px;
         
-        & button {
-        border: solid 2px $mossGreen;
-        background-color: $white;
-        color: $mossGreen;
-        width: 160px;
-        height: 45px;
-        text-align: center;
-        font-size: $fontSizeButtons;
-        border-radius: 22.5px;
-        }
+            & button {
+            border: solid 2px $mossGreen;
+            background-color: $white;
+            color: $mossGreen;
+            width: 160px;
+            height: 45px;
+            text-align: center;
+            font-size: $fontSizeButtons;
+            border-radius: 22.5px;
+            }
     }
 }
