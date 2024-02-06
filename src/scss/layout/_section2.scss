@@ -4,6 +4,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 10px;
+    padding-top: 20px;
 
     &__text {
         font-family: $fontFamily;
@@ -32,7 +33,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
 
             &--img1 {
                 & img {
@@ -41,12 +42,14 @@
                     border-radius: 50%;
                     grid-column: 1/2;
                     grid-row: 2/3;
+                    box-shadow: $boxShadowImgSection2;
                 }
                 & p {
                     font-size: $fontSizeImages2;
                     color: $black;
                     font-weight: $fontWeightBold;
                     text-align: center;
+                    padding-top: 8px;
                 }
         }
             &--img2 {
@@ -56,12 +59,14 @@
                 border-radius: 50%;
                 grid-column: 1/2;
                 grid-row: 3/4;
+                box-shadow: $boxShadowImgSection2;
             }
             & p {
                 font-size: $fontSizeImages2;
                 color: $black;
                 font-weight: $fontWeightBold;
                 text-align: center;
+                padding-top: 8px;
             }
         }
             &--img3 {
@@ -71,12 +76,14 @@
                 border-radius: 50%;
                 grid-column: 1/2;
                 grid-row: 4/5;
+                box-shadow: $boxShadowImgSection2;
             }
             & p {
                 font-size: $fontSizeImages2;
                 color: $black;
                 font-weight: $fontWeightBold;
                 text-align: center;
+                padding-top: 8px;
             }
         }
     }
