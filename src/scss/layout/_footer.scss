@@ -7,31 +7,24 @@
     gap: 27.9px;
 
     &__links1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         line-height: 1.88;
+        text-align: center;
+        margin-top: 60px;
     }
 
     &__links2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         line-height: 1.88;
+        text-align: center;
     }
 
-    &__footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    &__copy {
+        text-align: center;
+        color: $white;
+        padding-bottom: 33.5px;
 
         & p{
-            color: $white;
             font-size: 0.875rem;
-            line-height: 1.88
+            line-height: 1.88;
         }
     }
 }
@@ -40,5 +33,7 @@
 .links {
     a {
         color: $white;
+        text-align: center;
+        line-height: 1.88;
     }
 }
