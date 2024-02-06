@@ -1,0 +1,22 @@
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    &__text {
+        & h4 {
+            color: $mossGreen;
+            font-size: 0.875rem;
+        }
+
+        & h2 {
+            color: $black;
+            font-size: 1.375rem;
+        }
+        & p {
+            color: $greyishBrown;
+            font-size: 1.125rem;
+        }
+    }
+}
