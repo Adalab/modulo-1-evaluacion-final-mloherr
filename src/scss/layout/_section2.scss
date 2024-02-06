@@ -5,6 +5,8 @@
     grid-template-rows: auto;
     row-gap: 10px;
     padding-top: 20px;
+    justify-items: center;
+
 
     @media all and (min-width:768px) {
         display: grid;
@@ -49,16 +51,18 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-
         grid-column: 1/4;
         grid-row: 2/3;
+        width: 100%;
+        max-width: 920px;
+        padding: 0 15px;
+
 
         @media all and (min-width:768px) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin: 0 45px;
         }
 
             &--img1 {

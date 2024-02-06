@@ -1,14 +1,14 @@
 .section1 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     gap: 6px;
     padding-top: 34px;
-    margin: 0 15px;
 
     &__text {
         max-width: 924px;
+        margin: 0 13px;
         
         & h4 {
             color: $mossGreen;
@@ -41,10 +41,17 @@
     }
 
     &__button {
+        display: flex;
         margin-top: 42px;
         margin-bottom: 25px;
+        width: 100%;
+        max-width: 924px;
+        justify-content: flex-start;
+        align-items: start;
+
         
             & button {
+            justify-self: flex-start;
             border: solid 2px $mossGreen;
             background-color: $white;
             color: $mossGreen;

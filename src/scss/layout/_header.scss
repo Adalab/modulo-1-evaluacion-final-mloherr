@@ -25,20 +25,35 @@
     &__content {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
-        padding: 0 45px;
+        width: 75%;
+
+        @media all and (min-width:1280px) {
+            width: 50%;
+        }
 
         & h1 {
             color: $white;
             font-size: 1.875rem;
             font-weight: $fontWeightBold;
             line-height: 50px;
+
+            @media all and (min-width:768px) {
+                font-size: 4.688rem;
+                line-height: 100px;
+            }
         }
 
         & h2 {
             color: $white;
             font-size: 1rem;
             line-height: 19px;
+
+            @media all and (min-width:768px) {
+                font-size: 1.5rem;
+                line-height: 28px;
+            }
         }
     }
 
