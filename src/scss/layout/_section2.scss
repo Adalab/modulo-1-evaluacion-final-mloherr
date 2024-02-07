@@ -37,6 +37,7 @@
         h3 {
             color: $black;
             font-size: 1.25rem;
+            font-family: $fontFamilyTitle;
             font-weight: $fontWeightBold;
 
             @media all and (min-width:768px) {
