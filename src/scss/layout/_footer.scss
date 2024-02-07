@@ -13,16 +13,26 @@
     }
 
     &__buttonup {
-        background-color: $white;
+        @include displayFloatingButtons();
         width: 45px;
         height: 45px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
         top: 0;
-        transform: translateY(-60%);
+        animation: 2s linear 0s infinite alternate button-up;
+
+
+        @keyframes button-up {
+            from {
+                position: relative;
+                top: 0;
+            }
+
+            to {
+                position: relative;
+                transform: translateY(-60%);
+            }
+        }
+      
     }
 
     &__content {
@@ -44,7 +54,7 @@
         }
 
         &--links1 {
-            line-height: 1.88;
+            line-height: $lineHeightFooter;
             text-align: center;
 
             @media all and (min-width:768px) {
@@ -53,7 +63,7 @@
         }
 
         &--links2 {
-            line-height: 1.88;
+            line-height: $lineHeightFooter;
             text-align: center;
 
             @media all and (min-width:768px) {
@@ -69,23 +79,18 @@
             @media all and (min-width:768px) {
                 order: 1;
             }
-    
-    
-            & p{
-                font-size: 0.875rem;
-                line-height: 1.88;
-            }
+                p {
+                    font-size: 0.875rem;
+                    line-height: $lineHeightFooter;
+                }
         }
     }
 }
-
-
-
 
 .links {
     a {
         color: $white;
         text-align: center;
-        line-height: 1.88;
+        line-height: $lineHeightFooter;
     }
 }

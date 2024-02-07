@@ -9,14 +9,17 @@ $fontFamily: 'Roboto', sans-serif;
 $fontWeightMedium: 500;
 $fontWeightBold: 700;
 
-$fontSizeButtons: 1.25rem;
+
 $fontSizeImages2: 0.875rem;
 $fontSizeImages2Responsive: 1.125rem;
-
 $widhtImgSection2: 114px;
 $heigthImgSection2: 124.1px;
 $boxShadowImgSection2: 0px 10px 20px $brownishGrey;
 
+$fontSizeButtons: 1.25rem;
 $transformHoverButtons: scaleX(103%) scaleY(103%);
+$transitionHoverButtons: all 1s ease-out;
 
 
+
+$lineHeightFooter: 1.88;

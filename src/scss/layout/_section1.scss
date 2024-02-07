@@ -9,8 +9,7 @@
     &__text {
         max-width: 924px;
         margin: 0 13px;
-        
-        & h4 {
+        h4 {
             color: $mossGreen;
             font-size: 0.875rem;
 
@@ -18,8 +17,7 @@
                 font-size: 1 rem;
             }
         }
-
-        & h2 {
+        h2 {
             color: $black;
             font-size: 1.375rem;
             margin-top: 10px;
@@ -28,7 +26,7 @@
                 font-size: 2rem;
             }
         }
-        & p {
+        p {
             color: $greyishBrown;
             font-size: 1.125rem;
             line-height: 1.67;
@@ -43,24 +41,25 @@
     &__button {
         display: flex;
         margin-top: 42px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         width: 100%;
         max-width: 924px;
         justify-content: flex-start;
         align-items: start;
+        margin-left: 10px;
 
-        
-            button {
-                @include basicButton();
-                justify-self: flex-start;
-                background-color: $white;
-                color: $mossGreen;
-                width: 160px;
-                height: 45px;
-             }
-
+        button {
+            @include basicButton();
+            justify-self: flex-start;
+            background-color: $white;
+            color: $mossGreen;
+            width: 160px;
+            height: 45px;
+            transition: $transitionHoverButtons;
+         
             &:hover {
                 transform: $transformHoverButtons;
             }
         }
     }
+}

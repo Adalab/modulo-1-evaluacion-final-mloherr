@@ -4,3 +4,34 @@
     font-size: $fontSizeButtons;
     text-align: center;
 }
+
+@mixin displayFloatingButtons() {
+    background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayResponsiveImages() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@mixin sizeImages() {
+    width: $widhtImgSection2;
+    height: $heigthImgSection2;
+    border-radius: 50%;
+    box-shadow: $boxShadowImgSection2;
+}
+
+@mixin styleTextImages() {
+    font-size: $fontSizeImages2;
+    color: $black;
+    font-weight: $fontWeightBold;
+    text-align: center;
+    padding-top: 8px;
+}

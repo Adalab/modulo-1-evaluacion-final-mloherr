@@ -4,7 +4,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 10px;
-    padding-top: 20px;
+    padding: 50px 0;
     justify-items: center;
 
 
@@ -28,13 +28,13 @@
             grid-row: 1/2; 
         }
 
-        & p {
+        p {
            color: $brownishGrey;
            font-size: 0.75rem;
            font-weight: $fontWeightBold;
         }
 
-        & h3 {
+        h3 {
             color: $black;
             font-size: 1.25rem;
             font-weight: $fontWeightBold;
@@ -67,100 +67,70 @@
 
             &--img1 {
                 @media all and (min-width:768px) {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @include displayResponsiveImages();
                 }
-                & img {
-                    width: $widhtImgSection2;
-                    height: $heigthImgSection2;
-                    border-radius: 50%;
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                    box-shadow: $boxShadowImgSection2;
-
-                    @media all and (min-width:768px) {
+                    img {
+                        @include sizeImages();
                         grid-column: 1/2;
-                        grid-row: 2/3; 
-                    }
-                }
-                & p {
-                    font-size: $fontSizeImages2;
-                    color: $black;
-                    font-weight: $fontWeightBold;
-                    text-align: center;
-                    padding-top: 8px;
+                        grid-row: 2/3;
 
-                    @media all and (min-width:768px) {
-                        font-size: $fontSizeImages2Responsive;
+                        @media all and (min-width:768px) {
+                            grid-column: 1/2;
+                            grid-row: 2/3; 
+                        }
                     }
-                }
-        }
+                    p {
+                        @include styleTextImages();
+
+                        @media all and (min-width:768px) {
+                            font-size: $fontSizeImages2Responsive;
+                        }
+                    }
+            }
             &--img2 {
                 @media all and (min-width:768px) {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @include displayResponsiveImages();
                 }
-                & img {
-                width: $widhtImgSection2;
-                height: $heigthImgSection2;
-                border-radius: 50%;
-                grid-column: 1/2;
-                grid-row: 3/4;
-                box-shadow: $boxShadowImgSection2;
+                    img {
+                    @include sizeImages();
+                    grid-column: 1/2;
+                    grid-row: 3/4;
 
-                @media all and (min-width:768px) {
-                    grid-column: 2/3;
-                    grid-row: 2/3; 
-                }
-            }
-            & p {
-                font-size: $fontSizeImages2;
-                color: $black;
-                font-weight: $fontWeightBold;
-                text-align: center;
-                padding-top: 8px;
+                    @media all and (min-width:768px) {
+                        grid-column: 2/3;
+                        grid-row: 2/3; 
+                    }
+                    }
+                    p {
+                        @include styleTextImages();
 
-                @media all and (min-width:768px) {
-                    font-size: $fontSizeImages2Responsive;
-                }
+                        @media all and (min-width:768px) {
+                            font-size: $fontSizeImages2Responsive;
+                        }
+                    }
             }
-        }
             &--img3 {
                 @media all and (min-width:768px) {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @include displayResponsiveImages();
                 }
-                & img {
-                width: $widhtImgSection2;
-                height: $heigthImgSection2;
-                border-radius: 50%;
-                grid-column: 1/2;
-                grid-row: 4/5;
-                box-shadow: $boxShadowImgSection2;
+                    img {
+                    @include sizeImages();
+                    grid-column: 1/2;
+                    grid-row: 4/5;
 
-                @media all and (min-width:768px) {
-                    grid-column: 3/4;
-                    grid-row: 2/3; 
-                }
-            }
-            & p {
-                font-size: $fontSizeImages2;
-                color: $black;
-                font-weight: $fontWeightBold;
-                text-align: center;
-                padding-top: 8px;
+                    @media all and (min-width:768px) {
+                        grid-column: 3/4;
+                        grid-row: 2/3; 
+                    }
+                    }
+                    p {
+                        @include styleTextImages();
 
-                @media all and (min-width:768px) {
-                    font-size: $fontSizeImages2Responsive;
-                }
+                        @media all and (min-width:768px) {
+                            font-size: $fontSizeImages2Responsive;
+                        }
+                    }
             }
-        }
     }
     &__button {
         grid-column: 1/2;
@@ -176,12 +146,14 @@
             grid-row: 3/4; 
         }
 
-        & button {
+        button {
             @include basicButton();
             background-color: $mossGreen;
             color: $white;
             width: 184px;
             height: 45px;
+            transition: $transitionHoverButtons;
+         
 
             &:hover {
                 transform: $transformHoverButtons;

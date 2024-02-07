@@ -33,7 +33,7 @@
             width: 50%;
         }
 
-        & h1 {
+         h1 {
             color: $white;
             font-size: 1.875rem;
             font-weight: $fontWeightBold;
@@ -45,7 +45,7 @@
             }
         }
 
-        & h2 {
+         h2 {
             color: $white;
             font-size: 1rem;
             line-height: 19px;
@@ -58,13 +58,9 @@
     }
 
     &__anchor {
-        background-color: $white;
+        @include displayFloatingButtons();
         width: 38.2px;
         height: 38.2px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 20px;
         margin-bottom: 57.9px;
     }
