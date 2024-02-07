@@ -177,14 +177,15 @@
         }
 
         & button {
+            @include basicButton();
             background-color: $mossGreen;
             color: $white;
-            font-size: $fontSizeButtons;
-            border-radius: 22.5px;
-            text-align: center;
-            border: solid $mossGreen;
             width: 184px;
             height: 45px;
+
+            &:hover {
+                transform: $transformHoverButtons;
+            }
         }
     }
 }

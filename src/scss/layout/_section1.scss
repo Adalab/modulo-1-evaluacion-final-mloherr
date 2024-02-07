@@ -50,16 +50,17 @@
         align-items: start;
 
         
-            & button {
-            justify-self: flex-start;
-            border: solid 2px $mossGreen;
-            background-color: $white;
-            color: $mossGreen;
-            width: 160px;
-            height: 45px;
-            text-align: center;
-            font-size: $fontSizeButtons;
-            border-radius: 22.5px;
+            button {
+                @include basicButton();
+                justify-self: flex-start;
+                background-color: $white;
+                color: $mossGreen;
+                width: 160px;
+                height: 45px;
+             }
+
+            &:hover {
+                transform: $transformHoverButtons;
             }
+        }
     }
-}

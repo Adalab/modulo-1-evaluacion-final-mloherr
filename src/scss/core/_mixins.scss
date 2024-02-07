@@ -1,0 +1,6 @@
+@mixin basicButton() {
+    border: solid 2px $mossGreen;
+    border-radius: 22.5px;
+    font-size: $fontSizeButtons;
+    text-align: center;
+}
